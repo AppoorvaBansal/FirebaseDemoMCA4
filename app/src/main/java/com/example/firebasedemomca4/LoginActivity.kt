@@ -16,8 +16,8 @@ class LoginActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
-        btnlogin.setOnClickListener {
-            auth.signInWithEmailAndPassword(edemail.text.toString(),edpass.text.toString()).addOnCompleteListener {
+        btnuserreg.setOnClickListener {
+            auth.signInWithEmailAndPassword(edemail.text.toString(),edphone.text.toString()).addOnCompleteListener {
 
                 if(it.isSuccessful)
                 {

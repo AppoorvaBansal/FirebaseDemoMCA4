@@ -25,11 +25,11 @@ class RegistrationActivity : AppCompatActivity() {
         }
 
 
-        btnlogin.setOnClickListener {
+        btnuserreg.setOnClickListener {
 
             var email:String=edemail.text.toString()
-            var pass=edpass.text.toString()
-            var confirmpass=edconfpass.text.toString()
+            var pass=edphone.text.toString()
+            var confirmpass=edstate.text.toString()
 
            if(check(email)) {
            }
